@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/HKB3tCr2.ico" />
+    <title>Kim Da Young's Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+
+    <script src="./portfolio.js" defer></script>
+</head>
+
+<body>
+    <section class="top">
+        <img class="moonImg" src='./img/moonStar.png' alt="달 배경" />
+        <img class="flowerImg" src='./img/bottomFlower.png' alt="하단 꽃" />
+
+        <div class="title">
+            <span class="textWrapper">
+                <h2 class="titleText">
+                    Da Young's Portfolio
+                </h2>
+            </span>
+        </div>
+    </section>
+
+    <div class="roundDiv" id="about" data-scroll>
+        <h4 class="divTitle">ABOUT ME</h4>
+        <div class="contentWrap">
+
+        </div>
+
+    </div>
+
+    <script>
+        ScrollOut({
+            once: true,
+            onShown: (element) => {
+                new TypeIt(element.querySelector('.divTitle'), {
+                    startDelay: 300,
+                    cursor: false,
+                }).pause(10000).go();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
