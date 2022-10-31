@@ -4,6 +4,17 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
   "<span class='titleText'>$&</span>"
 );
 
+ScrollOut({
+  onShown: (element) => {
+    new TypeIt(element.querySelector(".divTitle"), {
+      startDelay: 100,
+      cursor: false,
+    })
+      .pause(1000)
+      .go();
+  },
+});
+
 anime
   .timeline({ loop: true })
   .add({
