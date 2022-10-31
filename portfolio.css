@@ -109,35 +109,76 @@ a:hover {
 }
 
 #skills {
-  background-color: rgb(249, 235, 234);
+  background-color: rgb(254, 230, 232);
 }
 #skills .divTitle {
-  color: rgb(142, 83, 83);
+  color: rgb(142, 83, 91);
 }
 #projects {
-  background-color: rgb(249, 248, 234);
+  background-color: rgb(250, 235, 223);
 }
 #projects .divTitle {
-  color: rgb(142, 135, 83);
+  color: rgb(142, 119, 83);
 }
 #contect {
-  background-color: rgb(234, 249, 248);
+  background-color: rgb(245, 234, 249);
 }
 #contect .divTitle {
-  color: rgb(83, 139, 142);
+  color: rgb(134, 83, 142);
 }
 
+/* 슬라이더 설정 */
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 40rem;
+  height: 21rem;
+  margin-top: 50px;
+}
+.slider-img {
+  width: -webkit-fill-available;
 }
 
 .swiper-pagination-bullet-active {
-  --swiper-theme-color: #ffec71;
+  --swiper-theme-color: #ffc547;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
-  --swiper-theme-color: #ffec71;
+  --swiper-theme-color: #ffc547;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  --swiper-theme-color: #baa769;
+}
+
+.projectcontents {
+  text-align: center;
+  margin: 2rem;
+  flex: 1 1 35%;
+  text-align: initial;
+}
+
+#standbyeatlogo {
+  width: 6rem;
+  margin: 15px;
+}
+.githubLogo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.skills {
+  margin-top: 50px;
+}
+.gitButton {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  width: 10rem;
+  background-color: rgb(255, 251, 247);
+  border: #ffc547 solid 2px;
+  border-radius: 10px;
+  font-size: 25px;
 }
 
 [data-scroll] {

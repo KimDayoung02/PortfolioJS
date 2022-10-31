@@ -23,121 +23,155 @@
     <script src="./portfolio.js" defer></script>
 </head>
 
-<>
-    <section class="top">
-        <img class="moonImg" src='./img/moonStar.png' alt="달 배경" />
-        <img class="flowerImg" src='./img/bottomFlower.png' alt="하단 꽃" />
 
-        <div class="title">
-            <span class="textWrapper">
-                <h2 class="titleText">
-                    Da Young's Portfolio
-                </h2><br />
-                <h5 class="titleText">please scroll down</h5>
+<section class="top">
+    <img class="moonImg" src='./img/moonStar.png' alt="달 배경" />
+    <img class="flowerImg" src='./img/bottomFlower.png' alt="하단 꽃" />
+
+    <div class="title">
+        <span class="textWrapper">
+            <h2 class="titleText">
+                Da Young's Portfolio
+            </h2><br />
+            <h5 class="titleText">please scroll down</h5>
+        </span>
+    </div>
+</section>
+
+<div class="roundDiv" id="about" data-scroll>
+    <h4 class="divTitle">ABOUT ME</h4>
+    <div class="contentWrap">
+        <div class="contents">
+
+            <span class="contentsTitle">
+                <i class="fa-sharp fa-solid fa-user" style="font-size:3rem"></i>
+                이름</span>
+
+            <p>김다영</p>
+        </div>
+        <div class="contents">
+
+            <span class="contentsTitle" style="margin-bottom:5px">
+                <i class="fa-regular fa-calendar-days" style="font-size:3rem"></i>
+                생년월일</span>
+            <p>1998.04.28</p>
+        </div>
+        <div class="contents">
+
+            <span class="contentsTitle">
+                <i class="fa-solid fa-graduation-cap" style="font-size:3rem"></i>
+                학력 및 수료</span>
+            <p>
+                2022.02 - '울산대학교 IT융합학과' 졸업<br />
+                2022.08 - '엘리스 SW 엔지니어 2기' 수료
+            </p>
+        </div>
+        <div class="contents">
+
+            <span class="contentsTitle">
+                <i class="fa-solid fa-right-to-bracket" style="font-size:3rem"></i>
+                GitHub</span>
+
+            <p><a href="https://github.com/KimDayoung02">바로가기</a></p>
+
+        </div>
+        <div class="contents" style="margin-top: 100px">
+            <span class="contentsTitle">한 줄 소개</span>
+            <p>서비스를 기꺼이 성실하게 구축해나가고 그 서비스를 많은 사람들이 편안한 사용감을 느끼게 하는 것이 목표인 프론트엔드 엔지니어입니다.
+                꾸준히 저의 능력을 가꿔 나가는 성실함과 맡은 것은 최선을 다해 수행하는 책임감, 오류를 찾아내는 분석력 등을 통해 문제를 해결하고 누군가의 북마크에 자리매김할 수 있는 프로젝트를
+                만들어내고 싶습니다.</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="roundDiv" id="skills" data-scroll>
+    <h4 class="divTitle">SKILLS</h4>
+    <div class="contentWrap">
+        <img id="htmlLogo" src="./img/htmlCssJs.png" alt="html,js,css 로고">
+
+        <img id="reactLogo" src="./img/react.png" alt="리액트 로고">
+        <img id="styledLogo" src="./img/styledComponent.png" alt="styledComponent 로고">
+    </div>
+</div>
+
+<div class="roundDiv" id="projects" data-scroll>
+    <h4 class="divTitle">PROJECTS</h4>
+    <div class="contentWrap">
+
+        <!-- Slider main container -->
+        <div class="projectcontents">
+            <h2 style="color: rgb(142, 83, 127)">1. STAND BY EAT</h2>
+            <img id="standbyeatlogo" src="./img/projectImg/standByEatLogo.png" alt="스탠바잇 로고">
+            <br /><i style="color: rgb(142, 83, 127)" class="fa-sharp fa-solid fa-arrow-right"></i>
+            <span class="projectExplain">
+                <span style="color:rgb(196, 140, 182) ">[엘리스 1차 팀 프로젝트]</span>웹을 이용하여 간편하게 식당 예약을 도와주는
+                서비스입니다.
+                <p style="margin-top:15px">사진을 넘겨 확인해보세요!</p>
+                <br /><br />
+                <span style="color: rgb(255, 143, 30)">client</span> : REACT, Styled Components
+                <br />
+                <span style="color:rgb(255, 143, 30)">server</span> : Node.js, mongoDB, AWS
             </span>
-        </div>
-    </section>
-
-    <div class="roundDiv" id="about" data-scroll>
-        <h4 class="divTitle">ABOUT ME</h4>
-        <div class="contentWrap">
-            <div class="contents">
-
-                <span class="contentsTitle">
-                    <i class="fa-sharp fa-solid fa-user" style="font-size:3rem"></i>
-                    이름</span>
-
-                <p>김다영</p>
-            </div>
-            <div class="contents">
-
-                <span class="contentsTitle" style="margin-bottom:5px">
-                    <i class="fa-regular fa-calendar-days" style="font-size:3rem"></i>
-                    생년월일</span>
-                <p>1998.04.28</p>
-            </div>
-            <div class="contents">
-
-                <span class="contentsTitle">
-                    <i class="fa-solid fa-graduation-cap" style="font-size:3rem"></i>
-                    학력 및 수료</span>
-                <p>
-                    2022.02 - '울산대학교 IT융합학과' 졸업<br />
-                    2022.08 - '엘리스 SW 엔지니어 2기' 수료
-                </p>
-            </div>
-            <div class="contents">
-
-                <span class="contentsTitle">
-                    <i class="fa-solid fa-right-to-bracket" style="font-size:3rem"></i>
-                    GitHub</span>
-
-                <p><a href="https://github.com/KimDayoung02">바로가기</a></p>
-
-            </div>
-            <div class="contents" style="margin-top: 100px">
-                <span class="contentsTitle">한 줄 소개</span>
-                <p>서비스를 기꺼이 성실하게 구축해나가고 그 서비스를 많은 사람들이 편안한 사용감을 느끼게 하는 것이 목표인 프론트엔드 엔지니어입니다.
-                    꾸준히 저의 능력을 가꿔 나가는 성실함과 맡은 것은 최선을 다해 수행하는 책임감, 오류를 찾아내는 분석력 등을 통해 문제를 해결하고 누군가의 북마크에 자리매김할 수 있는 프로젝트를
-                    만들어내고 싶습니다.</p>
-            </div>
+            <br />
+            <a href="https://github.com/KimDayoung02/Stand-By-Eat">
+                <button class="gitButton">
+                    <img class="githubLogo" src="./img/githubLogo.png" alt="깃">client
+                </button>
+            </a>
+            <a href="https://github.com/KimDayoung02/StandByEat-Back">
+                <button class="gitButton">
+                    <img class="githubLogo" src="./img/githubLogo.png" alt="깃">server
+                </button>
+            </a>
         </div>
 
-    </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="slider-img" src="./img/projectImg/standByEat1.gif" alt="스탠바잇1">
 
-
-    <div class="roundDiv" id="skills" data-scroll>
-        <h4 class="divTitle">SKILLS</h4>
-        <div class="contentWrap">
-            <img id="htmlLogo" src="./img/htmlCssJs.png" alt="html,js,css 로고">
-
-            <img id="reactLogo" src="./img/react.png" alt="리액트 로고">
-            <img id="styledLogo" src="./img/styledComponent.png" alt="styledComponent 로고">
-        </div>
-    </div>
-
-    <div class="roundDiv" id="projects" data-scroll>
-        <h4 class="divTitle">PROJECTS</h4>
-        <div class="contentWrap">
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">1
-                    </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-slide">
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                    <img class="slider-img" src="./img/projectImg/standByEat2.gif" alt="스탠바잇2">
+                </div>
+                <div class="swiper-slide">
+
+                    <img class="slider-img" src="./img/projectImg/standByEat3.gif" alt="스탠바잇3">
+                </div>
 
             </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
     </div>
+</div>
 
-    <div class="roundDiv" id="contect" data-scroll>
-        <h4 class="divTitle">CONTECT</h4>
-        <div class="contentWrap">
-        </div>
+<div class="roundDiv" id="contect" data-scroll>
+    <h4 class="divTitle">CONTECT</h4>
+    <div class="contentWrap">
     </div>
+</div>
 
-    <script>
-        ScrollOut({
-            onShown: (element) => {
-                new TypeIt(element.querySelector('.divTitle'), {
-                    startDelay: 100,
-                    cursor: false,
-                }).pause(1000).go();
-            }
-        });
-    </script>
+<script>
+    ScrollOut({
+        onShown: (element) => {
+            new TypeIt(element.querySelector('.divTitle'), {
+                startDelay: 100,
+                cursor: false,
+            }).pause(1000).go();
+        }
+    });
+</script>
 
-    </body>
+</body>
 
 </html>
