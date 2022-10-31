@@ -114,6 +114,31 @@ a:hover {
 #skills .divTitle {
   color: rgb(142, 83, 83);
 }
+#projects {
+  background-color: rgb(249, 248, 234);
+}
+#projects .divTitle {
+  color: rgb(142, 135, 83);
+}
+#contect {
+  background-color: rgb(234, 249, 248);
+}
+#contect .divTitle {
+  color: rgb(83, 139, 142);
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-theme-color: #ffec71;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-theme-color: #ffec71;
+}
 
 [data-scroll] {
   opacity: 0;

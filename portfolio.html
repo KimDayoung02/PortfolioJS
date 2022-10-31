@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
@@ -93,7 +96,36 @@
         </div>
     </div>
 
+    <div class="roundDiv" id="projects" data-scroll>
+        <h4 class="divTitle">PROJECTS</h4>
+        <div class="contentWrap">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">1
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="roundDiv" id="contect" data-scroll>
+        <h4 class="divTitle">CONTECT</h4>
+        <div class="contentWrap">
+        </div>
+    </div>
 
     <script>
         ScrollOut({
@@ -101,7 +133,7 @@
                 new TypeIt(element.querySelector('.divTitle'), {
                     startDelay: 100,
                     cursor: false,
-                }).pause(10000).go();
+                }).pause(1000).go();
             }
         });
     </script>
