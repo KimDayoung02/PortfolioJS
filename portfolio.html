@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
@@ -45,7 +46,7 @@
 
             <span class="contentsTitle">
                 <i class="fa-sharp fa-solid fa-user" style="font-size:3rem"></i>
-                이름</span>
+                NAME</span>
 
             <p>김다영</p>
         </div>
@@ -53,14 +54,14 @@
 
             <span class="contentsTitle" style="margin-bottom:5px">
                 <i class="fa-regular fa-calendar-days" style="font-size:3rem"></i>
-                생년월일</span>
+                Birth</span>
             <p>1998.04.28</p>
         </div>
         <div class="contents">
 
             <span class="contentsTitle">
                 <i class="fa-solid fa-graduation-cap" style="font-size:3rem"></i>
-                학력 및 수료</span>
+                Education</span>
             <p>
                 2022.02 - '울산대학교 IT융합학과' 졸업<br />
                 2022.08 - '엘리스 SW 엔지니어 2기' 수료
@@ -72,14 +73,16 @@
                 <i class="fa-solid fa-right-to-bracket" style="font-size:3rem"></i>
                 GitHub</span>
 
-            <p><a href="https://github.com/KimDayoung02">바로가기</a></p>
+            <p><a href="https://github.com/KimDayoung02">LINK</a></p>
 
         </div>
         <div class="contents" style="margin-top: 100px">
-            <span class="contentsTitle">한 줄 소개</span>
-            <p>서비스를 기꺼이 성실하게 구축해나가고 그 서비스를 많은 사람들이 편안한 사용감을 느끼게 하는 것이 목표인 프론트엔드 엔지니어입니다.
-                꾸준히 저의 능력을 가꿔 나가는 성실함과 맡은 것은 최선을 다해 수행하는 책임감, 오류를 찾아내는 분석력 등을 통해 문제를 해결하고 누군가의 북마크에 자리매김할 수 있는 프로젝트를
-                만들어내고 싶습니다.</p>
+            <span class="contentsTitle"><i class="fa-solid fa-person-chalkboard"></i> Introductory remarks</span>
+            <p>누군가의 북마크⭐에 자리매김할 수 있는 프로젝트를 만들어내고 싶은 프론트엔드 개발자입니다. <br />
+                가시적인 부분을 신경쓰지 않고 만들었던 캡스톤디자인에서 사용기술이나 기능이 눈에 잘 들어오지
+                않는다는 혹평을 들은 뒤, 무엇보다 직접적으로 보여지는 프론트가 중요하다 느끼게 되어 UX/UI에 관심을 갖게 되었습니다. <br />
+                사용자에게 편안한 사용감을 주면서 정보를 명확하고 생동감있게
+                전달하는 개발자가 되겠습니다.</p>
         </div>
     </div>
 
@@ -89,10 +92,8 @@
 <div class="roundDiv" id="skills" data-scroll>
     <h4 class="divTitle">SKILLS</h4>
     <div class="contentWrap">
-        <img id="htmlLogo" src="./img/htmlCssJs.png" alt="html,js,css 로고">
+        <div id="chart"></div>
 
-        <img id="reactLogo" src="./img/react.png" alt="리액트 로고">
-        <img id="styledLogo" src="./img/styledComponent.png" alt="styledComponent 로고">
     </div>
 </div>
 
@@ -320,6 +321,42 @@
         </div>
     </div>
 </div>
+
+<script>
+    var options = {
+        series: [{
+            data: [85, 80, 80, 70, 65, 60, 50, 30]
+        }],
+        chart: {
+            type: 'bar',
+            height: 500,
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: true,
+            }
+        },
+        dataLabels: {
+            enabled: true
+        },
+        xaxis: {
+            categories: ['JavaScript', 'CSS', 'HTML', 'REACT', `Styled 
+            Components`,
+                'GitHub', 'TypeScript', 'Node.js'
+            ],
+        },
+        fill: {
+            colors: ['rgb(217, 123, 130)']
+        },
+        tooltip: {
+            enabled: false
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+</script>
 
 </body>
 

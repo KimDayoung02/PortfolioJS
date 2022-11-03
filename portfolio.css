@@ -99,14 +99,13 @@ a:hover {
   color: pink;
 }
 
-#htmlLogo {
-  width: 40vw;
-  margin: auto;
+#chart {
+  margin: 35px auto;
+  width: 60rem;
 }
-#reactLogo,
-#styledLogo {
-  margin: auto;
-  width: 15vw;
+tspan {
+  font-size: 11px;
+  font-weight: bold;
 }
 
 #skills {
