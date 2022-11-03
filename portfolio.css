@@ -185,6 +185,21 @@ tspan {
   background-color: rgb(255, 205, 155);
   border: #d39818 solid 2px;
 }
+.downloadButton {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+
+  background-color: rgb(255, 251, 247);
+  border: #ffc547 solid 2px;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: all 0.15s;
+}
+.downloadButton:hover {
+  background-color: rgb(255, 205, 155);
+  border: #d39818 solid 2px;
+}
 
 [data-scroll] {
   opacity: 0;
