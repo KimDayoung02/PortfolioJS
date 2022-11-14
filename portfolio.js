@@ -43,7 +43,11 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-
+  grabCursor: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
